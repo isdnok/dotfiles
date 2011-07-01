@@ -6,6 +6,8 @@ let g:buftabs_in_statusline=1
 set number
 syntax on
 set tabstop=2
+set expandtab
+"set paste
 set softtabstop=2
 set shiftwidth=2
 set encoding=utf8
@@ -18,11 +20,10 @@ set title
 set laststatus=2
 set grepprg=internal
 set hlsearch
+:set noautoindent
+":set nosmartindent
 "カレント行にアンダーラインを表示するがもっさりするのでやめる
 "set cursorline
-
-"ハイライトの消去"
-noremap <Esc><Esc> :nohlsearch<CR><Esc>
 
 "Buf切り替え
 noremap <Tab> :bn!<CR>
@@ -55,3 +56,6 @@ nnoremap <C-w>s :call <SID>good_size()<Cr>
 "let g:yankring_enabled = 0
 :let g:yankring_ignore_duplicate = 1
 set viminfo+=!
+
+"ハイライトを消す
+nmap <Esc><Esc> :nohlsearch<CR><Esc>

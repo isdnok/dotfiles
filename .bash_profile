@@ -24,3 +24,10 @@ alias lal="ls -la"
 
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# show pwd
+L1='\[\e[$[COLUMNS-$(echo -n " (\w)" | wc -c)]C\e[1;35m(\w)\e[0m\e[$[COLUMNS]D\]'
+#export PS1="${L1}[\u@\h]\\$ "
+#export PS1="${L1}[\u]\\$ "
+export PS1="${L1}\\$ "
+
