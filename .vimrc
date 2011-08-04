@@ -76,4 +76,4 @@ let g:rails_default_database="mysql"
 imap <C-e> <C-x><C-o>
 
 "<C-r>でRails omni補完
-imap <C-r> <C-x><C-o>
+imap <C-r> <C-x><C-u>
