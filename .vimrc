@@ -1,3 +1,10 @@
+set nocompatible
+filetype on
+filetype indent on
+filetype plugin on
+compiler ruby
+let ruby_space_errors=1
+
 "バッファタブにパスを省略してファイル名のみ表示する(buftabs.vim)
 let g:buftabs_only_basename=1
 "バッファタブをステータスライン内に表示する
@@ -59,3 +66,14 @@ set viminfo+=!
 
 "ハイライトを消す
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+
+" rails.vim
+let g:rails_level=4
+let g:rails_default_file="app/controllers/application.rb"
+let g:rails_default_database="mysql"
+
+"<C-e>でRuby omni補完
+imap <C-e> <C-x><C-o>
+
+"<C-r>でRails omni補完
+imap <C-r> <C-x><C-o>
