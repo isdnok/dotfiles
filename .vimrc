@@ -37,25 +37,25 @@ noremap <Tab> :bn!<CR>
 noremap <S-Tab> :bp!<CR>
 
 "Win操作
-nnoremap sh <C-w>h:call <SID>good_size()<Cr>
-nnoremap sj <C-w>j:call <SID>good_size()<Cr>
-nnoremap sk <C-w>k:call <SID>good_size()<Cr>
-nnoremap sl <C-w>l:call <SID>good_size()<Cr>
-nnoremap sH <C-w>H:call <SID>good_size()<Cr>
-nnoremap sJ <C-w>J:call <SID>good_size()<Cr>
-nnoremap sK <C-w>K:call <SID>good_size()<Cr>
-nnoremap sL <C-w>L:call <SID>good_size()<Cr>
-nnoremap ss :call <SID>good_size()<Cr>
-function! s:good_size()
-  if winwidth(0) < 128 
-    vertical resize 128
-  endif
-  if winheight(0) < 40
-    resize 40
-  endif
-endfunction
-
-nnoremap <C-w>s :call <SID>good_size()<Cr>
+"nnoremap sh <C-w>h:call <SID>good_size()<Cr>
+"nnoremap sj <C-w>j:call <SID>good_size()<Cr>
+"nnoremap sk <C-w>k:call <SID>good_size()<Cr>
+"nnoremap sl <C-w>l:call <SID>good_size()<Cr>
+"nnoremap sH <C-w>H:call <SID>good_size()<Cr>
+"nnoremap sJ <C-w>J:call <SID>good_size()<Cr>
+"nnoremap sK <C-w>K:call <SID>good_size()<Cr>
+"nnoremap sL <C-w>L:call <SID>good_size()<Cr>
+"nnoremap ss :call <SID>good_size()<Cr>
+"function! s:good_size()
+"  if winwidth(0) < 128 
+"    vertical resize 128
+"  endif
+"  if winheight(0) < 40
+"    resize 40
+"  endif
+"endfunction
+"
+"nnoremap <C-w>s :call <SID>good_size()<Cr>
 
 "ヤンクのプラグイン http://nanasi.jp/articles/vim/yankring_vim.html
 :let g:yankring_max_history = 30
@@ -77,3 +77,8 @@ imap <C-e> <C-x><C-o>
 
 "<C-r>でRails omni補完
 imap <C-r> <C-x><C-u>
+
+noremap <C-a> ^
+noremap <C-e> $
+noremap <S-a> 1G
+noremap <S-e> G

@@ -24,6 +24,7 @@
   bra         = branch -a
   st          = status
   d           = diff
+  di           = diff
   last        = log -1 HEAD
   unstage     = reset HEAD --
   glog        = log --graph --date=short --pretty=format:'%Cgreen%h %cd %Cblue%cn %Creset%s'
