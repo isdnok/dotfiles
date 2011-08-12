@@ -1,22 +1,22 @@
 [user]
-  email = n.ishida0520@gmail.com
-  name = Naoki Ishida
+  email       = n.ishida0520@gmail.com
+  name        = Naoki Ishida
 [color]
-  ui = auto
-  status = auto
-  diff = auto
-  branch = auto
+  ui          = auto
+  status      = auto
+  diff        = auto
+  branch      = auto
   interactive = auto
-  grep = auto
+  grep        = auto
 [color "diff"]
-  plain = normal
-  meta = bold green
-  frag = bold cyan
-  func = bold magenta
-  old = bold red
-  new = bold blue
-  commit = bold white
-  whitespace = normal magenta
+  plain       = normal
+  meta        = bold green
+  frag        = bold cyan
+  func        = bold magenta
+  old         = bold red
+  new         = bold blue
+  commit      = bold white
+  whitespace  = normal magenta
 [alias]
   co          = checkout
   ci          = commit
@@ -24,7 +24,7 @@
   bra         = branch -a
   st          = status
   d           = diff
-  di           = diff
+  di          = diff
   last        = log -1 HEAD
   unstage     = reset HEAD --
   glog        = log --graph --date=short --pretty=format:'%Cgreen%h %cd %Cblue%cn %Creset%s'
