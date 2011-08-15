@@ -78,7 +78,7 @@ imap <C-e> <C-x><C-o>
 "<C-r>でRails omni補完
 imap <C-r> <C-x><C-u>
 
-noremap <C-a> ^
+noremap <C-a> 0
 noremap <C-e> $
 noremap <S-a> 1G
 noremap <S-e> G
