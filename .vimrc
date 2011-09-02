@@ -25,6 +25,9 @@ set whichwrap=b,s,h,l,<,>,[,]
 set backspace=indent,eol,start
 set title
 set laststatus=2
+
+set statusline=%=%c,%l%4p%%
+
 set grepprg=internal
 set hlsearch
 :set noautoindent

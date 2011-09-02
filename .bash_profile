@@ -14,7 +14,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 
 
 # alias
-alias ssp='script/server webrick -e production'
+#alias ssp='script/server webrick -e production'
 alias ss='script/server webrick'
 alias la="ls -a"
 alias lf="ls -F"
