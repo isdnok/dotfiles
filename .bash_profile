@@ -22,6 +22,7 @@ alias ll="ls -l"
 alias lla="ls -la"
 alias lal="ls -la"
 alias g="git"
+alias :e="vim"
 
 # rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
